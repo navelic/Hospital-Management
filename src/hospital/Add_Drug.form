@@ -158,6 +158,9 @@
           </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="drugname">
+          <Events>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="drugnameActionPerformed"/>
+          </Events>
         </Component>
         <Component class="javax.swing.JTextField" name="drugprice">
           <Events>

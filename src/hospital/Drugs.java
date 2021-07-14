@@ -37,7 +37,7 @@ public class Drugs extends javax.swing.JFrame {
         {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:8080/hospital","root","");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/hospital","root","root");
             }
         catch (SQLException ex) {
             Logger.getLogger(Update_Prescription.class.getName()).log(Level.SEVERE, null, ex);

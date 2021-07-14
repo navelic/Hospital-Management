@@ -42,7 +42,7 @@ public class USER extends javax.swing.JFrame {
         {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con= (Connection) DriverManager.getConnection("jdbc:mysql://localhost:8080/hospital","root","");
+            con= (Connection) DriverManager.getConnection("jdbc:mysql://localhost/hospital","root","root");
            
             }
         catch (SQLException ex) {

@@ -42,7 +42,7 @@ public class MyDetails extends javax.swing.JFrame {
     {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:8080/hospital","root","");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/hospital","root","root");
         } 
         catch (ClassNotFoundException ex) {
             Logger.getLogger(Prescription.class.getName()).log(Level.SEVERE, null, ex);

@@ -41,7 +41,7 @@ public class Add_Drug extends javax.swing.JFrame {
     {
         try{
             Class.forName("com.mysql.jdbc.Driver");
-            con = DriverManager.getConnection("jdbc:mysql://localhost:8080/hospital","root","");
+            con = DriverManager.getConnection("jdbc:mysql://localhost/hospital","root","root");
         }
         catch (SQLException ex) {
             Logger.getLogger(Update_Prescription.class.getName()).log(Level.SEVERE, null, ex);
@@ -93,6 +93,12 @@ public class Add_Drug extends javax.swing.JFrame {
         drugid.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 drugidActionPerformed(evt);
+            }
+        });
+
+        drugname.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                drugnameActionPerformed(evt);
             }
         });
 
@@ -228,6 +234,10 @@ public class Add_Drug extends javax.swing.JFrame {
             Logger.getLogger(Add_Drug.class.getName()).log(Level.SEVERE, null, ex);
         }
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void drugnameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_drugnameActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_drugnameActionPerformed
 
     /**
      * @param args the command line arguments
